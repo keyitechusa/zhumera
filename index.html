@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#faf7f2" />
+    <meta name="description" content="ZHUMERA - thoughtful gifts and little things for a brighter everyday. Explore our lovingly curated collection." />
+    <title>ZHUMERA | Little things. Big feelings.</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Zm3 1V6a4 4 0 0 1 8 0v2"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.5 4.8a5.4 5.4 0 0 0-8.5 1 5.4 5.4 0 0 0-8.5-1C-2 10.3 12 20 12 20s14-9.7 8.5-15.2Z"/></symbol>
+      <symbol id="i-gift" viewBox="0 0 48 48"><path d="M8 23h32v20H8zM5 17h38v9H5zM24 17v26M24 17C3 16 12-1 20 10l4 7c21-1 12-18 4-7z"/><path d="M17 33c-4-4-6 2 0 5 6-3 4-9 0-5"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5L12 2Z"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="i-cup" viewBox="0 0 48 48"><path d="M10 15h25v17c0 11-25 11-25 0V15Zm25 3h4c9 0 9 13-4 13M7 43h32M18 5v4M27 3v6"/></symbol>
+      <symbol id="i-note" viewBox="0 0 48 48"><path d="M12 6h27v36H12zM8 13h8M8 22h8M8 31h8M22 16h10M22 23h10M22 30h6"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 5h11v13H3zM14 10h4l4 4v4h-8"/><circle cx="7" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+    </svg>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement"><svg class="icon"><use href="#i-sparkle"/></svg> A little gift. A whole lot of happy. <span class="announcement-divider">|</span><span>Free shipping on orders $60+</span><svg class="icon"><use href="#i-sparkle"/></svg></div>
+    <header class="site-header">
+      <div class="header-inner container">
+        <button class="icon-button mobile-menu-button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><svg class="icon"><use href="#i-menu"/></svg></button>
+        <a class="brand" href="#" aria-label="ZHUMERA home"><img src="/images/logo.png" alt="ZHUMERA - gift & little things" width="640" height="155" /></a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a class="active" href="#collection" data-nav-filter="all">Shop all</a>
+          <a href="#collection" data-nav-filter="gifts">Gifts & little things <span class="nav-chevron"></span></a>
+          <a href="#collection" data-new-arrivals>New arrivals <span class="tiny-dot"></span></a>
+          <a href="#our-story">Our story</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button" id="search-open" aria-label="Search products"><svg class="icon"><use href="#i-search"/></svg></button>
+          <button class="icon-button wishlist-header" id="wishlist-open" aria-label="View saved favorites"><svg class="icon"><use href="#i-heart"/></svg><span class="favorite-count" hidden>0</span></button>
+          <button class="icon-button cart-button" id="cart-open" aria-label="Open shopping bag, 0 items"><svg class="icon"><use href="#i-bag"/></svg><span class="cart-count">0</span></button>
+        </div>
+      </div>
+      <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation" hidden>
+        <a href="#collection" data-nav-filter="all">Shop all <span>&rarr;</span></a>
+        <a href="#collection" data-nav-filter="gifts">Gifts & little things <span>&rarr;</span></a>
+        <a href="#collection" data-new-arrivals>New arrivals <span>&rarr;</span></a>
+        <a href="#our-story">Our story <span>&rarr;</span></a>
+        <button id="mobile-favorites">Your saved favorites <svg class="icon"><use href="#i-heart"/></svg></button>
+        <p>Little things, picked with love.</p>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="little-line"></span> THOUGHTFUL GIFTS. EVERYDAY JOY.</p>
+          <h1 id="hero-title">Little things.<br /><em>Big feelings.</em><svg class="hero-heart icon"><use href="#i-heart"/></svg></h1>
+          <p class="hero-description">For the just-because moments, the thank-yous,<br class="desktop-break" /> and the people who make life a little sweeter.</p>
+          <p class="hero-description second-line">Thoughtfully picked. Lovingly wrapped. Always heartfelt.</p>
+          <a class="button button-primary" href="#collection" data-nav-filter="all">Find your little happy <svg class="icon"><use href="#i-arrow"/></svg></a>
+          <div class="hero-footnote"><span class="mini-gift"><svg class="icon"><use href="#i-gift"/></svg></span><span>Good things come in little packages.</span><span class="handwritten-arrow" aria-hidden="true">&#10548;</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo-wrap"><img class="hero-photo" src="/images/gift-box.jpg" alt="A cream ZHUMERA gift box tied with a soft caramel bow, surrounded by flowers" width="661" height="454" fetchpriority="high" /></div>
+          <div class="hero-sticker"><svg class="icon"><use href="#i-gift"/></svg><span>a little something,<br /><em>just for you</em></span><svg class="sticker-heart icon"><use href="#i-heart"/></svg></div>
+          <span class="hero-sparkle sparkle-one" aria-hidden="true">&#10022;</span>
+          <span class="hero-sparkle sparkle-two" aria-hidden="true">&#10023;</span>
+          <div class="photo-caption"><span></span> MADE TO MAKE SOMEONE SMILE</div>
+        </div>
+      </section>
+      <section class="values-strip" aria-label="The ZHUMERA touch">
+        <div class="container values-inner">
+          <p><svg class="icon"><use href="#i-heart"/></svg> Thoughtfully curated</p><span class="strip-star" aria-hidden="true">&#10022;</span>
+          <p><svg class="icon"><use href="#i-gift"/></svg> Wrapped with love</p><span class="strip-star" aria-hidden="true">&#10022;</span>
+          <p><svg class="icon"><use href="#i-sparkle"/></svg> Little things, lasting joy</p><span class="strip-star" aria-hidden="true">&#10022;</span>
+          <p><svg class="icon"><use href="#i-truck"/></svg> A happy mail day, on its way</p>
+        </div>
+      </section>
+      <section class="collection-section container" id="collection" aria-labelledby="collection-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">THE LITTLE THINGS THAT MEAN A LOT</p><h2 id="collection-title">Meet your new <em>favorite things.</em></h2></div>
+          <button class="text-link" id="view-all">Explore the collection <svg class="icon"><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="collection-toolbar">
+          <div class="filter-tabs" role="group" aria-label="Filter products">
+            <button class="filter-tab active" data-filter="all" aria-pressed="true">The favorites</button>
+            <button class="filter-tab" data-filter="comforts" aria-pressed="false">Little comforts</button>
+            <button class="filter-tab" data-filter="paper" aria-pressed="false">Paper & daydreams</button>
+            <button class="filter-tab" data-filter="gifts" aria-pressed="false">Ready-to-gift</button>
+          </div>
+          <span class="collection-note">A little love in every find <svg class="icon"><use href="#i-heart"/></svg></span>
+        </div>
+        <p class="results-announcement visually-hidden" aria-live="polite"></p>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="empty-state" id="collection-empty" hidden><svg class="icon"><use href="#i-heart"/></svg><h3>Your favorites start here.</h3><p>Tap the heart on a little thing you love to save it for later.</p><button class="button button-primary" id="browse-favorites">Discover little things <svg class="icon"><use href="#i-arrow"/></svg></button></div>
+        <div class="collection-bottom"><span>A gift for them. A little treat for you.</span><svg class="icon"><use href="#i-heart"/></svg><span>There’s always a good reason.</span></div>
+      </section>
+      <section class="story-section container" id="our-story" aria-labelledby="story-title">
+        <div class="story-image-wrap"><img src="/images/gift-tag.jpg" alt="ZHUMERA's smiling gift logo on a round cream tag with linen and delicate white flowers" loading="lazy" width="579" height="454" /><span class="story-image-note">It's the little things.</span></div>
+        <div class="story-copy">
+          <p class="eyebrow">A LITTLE ABOUT ZHUMERA</p>
+          <h2 id="story-title">Not just a gift.<br /><em>A feeling.</em></h2>
+          <p>We believe the smallest things can hold the biggest feelings. A warm cup. A handwritten note. A little surprise that says, “I thought of you.”</p>
+          <p>That’s why we bring together thoughtful little finds that make the everyday feel a little more special. For your people. For yourself. Just because.</p>
+          <span class="story-signature">From our heart to yours, <strong>ZHUMERA</strong><svg class="icon"><use href="#i-heart"/></svg></span>
+          <button class="text-link" id="story-more">Get to know us <svg class="icon"><use href="#i-arrow"/></svg></button>
+        </div>
+      </section>
+      <section class="occasion-section container" aria-labelledby="occasion-title">
+        <div class="center-heading"><p class="eyebrow">NO BIG OCCASION NECESSARY</p><h2 id="occasion-title">A little something for <em>every kind of day.</em></h2></div>
+        <div class="occasion-grid">
+          <a href="#collection" data-nav-filter="comforts" class="occasion-card"><span class="occasion-icon"><svg class="icon"><use href="#i-cup"/></svg></span><span><strong>For your everyday rituals</strong><small>Slow mornings. Small comforts.</small></span><svg class="icon"><use href="#i-arrow"/></svg></a>
+          <a href="#collection" data-nav-filter="gifts" class="occasion-card"><span class="occasion-icon"><svg class="icon"><use href="#i-gift"/></svg></span><span><strong>For someone special</strong><small>A little “you mean a lot.”</small></span><svg class="icon"><use href="#i-arrow"/></svg></a>
+          <a href="#collection" data-nav-filter="paper" class="occasion-card"><span class="occasion-icon"><svg class="icon"><use href="#i-note"/></svg></span><span><strong>For your next little idea</strong><small>Big dreams start on a little page.</small></span><svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
+      </section>
+      <section class="newsletter-section" aria-labelledby="newsletter-title">
+        <div class="newsletter-inner container">
+          <div class="newsletter-doodle" aria-hidden="true"><svg class="icon"><use href="#i-gift"/></svg><span>&#10022;</span></div>
+          <div class="newsletter-copy"><p class="eyebrow">A LITTLE HAPPY IN YOUR INBOX</p><h2 id="newsletter-title">Good things are <em>on the way.</em></h2><p>New little finds, thoughtful inspiration, and a note from us now and then.</p></div>
+          <form id="newsletter-form"><label class="visually-hidden" for="newsletter-email">Your email address</label><div class="email-field"><input type="email" name="email" id="newsletter-email" autocomplete="email" placeholder="Your email address" required maxlength="254" /><button type="submit" aria-label="Join the ZHUMERA newsletter"><svg class="icon"><use href="#i-arrow"/></svg></button></div><p id="newsletter-status" aria-live="polite">Just the good stuff. Pinky promise.</p></form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer container">
+      <div class="footer-main">
+        <div class="footer-brand"><a class="brand" href="#" aria-label="ZHUMERA home"><img src="/images/logo.png" alt="ZHUMERA - gift & little things" width="640" height="155" loading="lazy" /></a><p>A little gift for a brighter everyday.</p><button class="social-link" id="social-button" aria-label="About ZHUMERA on Instagram"><svg class="icon"><use href="#i-instagram"/></svg><span>Find a little inspiration</span><svg class="icon"><use href="#i-arrow"/></svg></button></div>
+        <div class="footer-links"><h3>Find your little happy</h3><a href="#collection" data-nav-filter="all">Shop all</a><a href="#collection" data-new-arrivals>New arrivals</a><a href="#collection" data-nav-filter="gifts">Gifts & little things</a></div>
+        <div class="footer-links"><h3>Here to help</h3><button data-info="shipping">Shipping & returns</button><button data-info="gifting">The gifting details</button><button data-info="contact">Say hello</button></div>
+        <div class="footer-note"><svg class="icon"><use href="#i-heart"/></svg><p>Picked with thought.<br />Packed with love.<br /><em>Sent with a smile.</em></p></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span id="year"></span> ZHUMERA. Little things. Big feelings.</p><span class="demo-label">A little preview of what’s to come &middot; Demo store</span><button data-info="privacy">Privacy & cookies</button></div>
+    </footer>
+    <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title">
+      <div class="dialog-heading"><div><p class="eyebrow">FIND A LITTLE SOMETHING</p><h2 id="search-title">What makes you <em>smile?</em></h2></div><button class="icon-button" data-close aria-label="Close search"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <div class="search-field"><svg class="icon"><use href="#i-search"/></svg><label class="visually-hidden" for="search-input">Search products</label><input id="search-input" type="search" placeholder="Try a mug, a gift, a little comfort..." autocomplete="off" /></div>
+      <p class="search-hint" id="search-status" aria-live="polite">A few little things you might love</p>
+      <div id="search-results" class="search-results"></div>
+    </dialog>
+    <dialog id="product-dialog" class="product-dialog"><button class="icon-button floating-close" data-close aria-label="Close product details"><svg class="icon"><use href="#i-close"/></svg></button><div id="product-detail"></div></dialog>
+    <dialog id="cart-dialog" class="cart-dialog" aria-labelledby="cart-title">
+      <div class="dialog-heading"><div><p class="eyebrow">GOOD THINGS INSIDE</p><h2 id="cart-title">Your little <em>bag.</em> <span id="cart-title-count">(0)</span></h2></div><button class="icon-button" data-close aria-label="Close shopping bag"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <div class="cart-shipping"><p id="shipping-message"></p><div class="shipping-track"><span id="shipping-progress"></span></div></div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-summary" id="cart-summary"><label class="gift-wrap-option"><input id="gift-wrap" type="checkbox" /><svg class="icon"><use href="#i-gift"/></svg><span>Add a little extra love<small>Gift wrap & a handwritten-style note</small></span><strong>$4.00</strong></label><div class="subtotal-row"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div><p class="cart-fine-print">Shipping calculated at checkout. Prices in USD.</p><button class="button button-primary" id="checkout-button">Preview checkout <svg class="icon"><use href="#i-arrow"/></svg></button><p class="demo-disclaimer">Just a demo, just for you. No payments or orders.</p></div>
+    </dialog>
+    <dialog id="info-dialog" class="info-dialog" aria-labelledby="info-title"><button class="icon-button floating-close" data-close aria-label="Close information"><svg class="icon"><use href="#i-close"/></svg></button><svg class="info-gift icon"><use href="#i-gift"/></svg><p class="eyebrow">A LITTLE NOTE FROM US</p><h2 id="info-title"></h2><div id="info-content"></div><button class="button button-primary" data-close>Lovely, got it <svg class="icon"><use href="#i-heart"/></svg></button></dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"><svg class="icon"><use href="#i-check"/></svg><span></span></div>
+    <noscript><div class="noscript-note">Our little shop needs JavaScript for product browsing and the demo shopping bag. Please enable it to explore the full experience.</div></noscript>
+  </body>
+</html>
