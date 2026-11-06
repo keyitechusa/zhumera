@@ -24,6 +24,8 @@ The [deployment workflow](./.github/workflows/deploy-pages.yml) tests, builds, a
 
 If GitHub Pages is unavailable, check the repository's visibility, GitHub plan, and organization policies. Do not select branch-based deployment: the workflow publishes the built `dist` artifact, not the source files. No third-party hosting account, deployment secret, or backend is required.
 
+If **Configure GitHub Pages** fails with **Pages site: Not Found**, enable the **GitHub Actions** source in Settings > Pages first. Then open the failed workflow run and choose **Re-run jobs > Re-run failed jobs**, or select **Deploy demo to GitHub Pages > Run workflow** on the Actions tab. Confirm the new attempt finishes successfully; enabling Pages alone does not retry a failed deployment.
+
 Vite uses a relative base URL, and dynamically rendered product images use that same base, so the built demo works under `/zhumera/` as well as a custom domain. To check a production build locally under the project path:
 
 ```sh
